@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/draw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v4.widget.SlidingPaneLayout
+            android:id="@+id/slidingpanel"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_gravity="left"
+                android:orientation="vertical"
+                android:layout_height="fill_parent">
+
+
+                <ListView
+                    android:id="@+id/left_list"
+                    android:layout_width="match_parent"
+                    android:background="#aaeeff"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"
+
+                    />
+
+                <Button
+                    android:id="@+id/but_slid"
+                    android:text="SHOW"
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1">
+
+                 <android.support.v4.widget.SwipeRefreshLayout
+                     android:id="@+id/refresh"
+                     android:scrollbarAlwaysDrawVerticalTrack="true"
+                     android:layout_width="fill_parent"
+                     android:layout_height="match_parent"
+                     >
+                     <android.support.v7.widget.RecyclerView
+                         android:id="@+id/recycler"
+                         android:layout_width="match_parent"
+                         android:background="#aaaaaa"
+                         android:gravity="center"
+                         android:layout_height="wrap_content"
+                         />
+
+                 </android.support.v4.widget.SwipeRefreshLayout>
+            </LinearLayout>
+        </android.support.v4.widget.SlidingPaneLayout>
+
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_gravity="end"
+            android:background="#aadd11"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHOW"/>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

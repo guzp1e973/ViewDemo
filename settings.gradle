@@ -1,0 +1,2 @@
+include ':Demo', ':slidingpaneldemo', ':allviewdemo'
+include ':myRefresh'

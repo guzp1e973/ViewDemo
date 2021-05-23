@@ -46,9 +46,10 @@ public class MainActivity extends Activity {
 		int pos = RecyclerAdapter.position;
 
 		if (pos != -1) {
-			Log.i("msg", getIntent().getIntExtra("data", -1) + "aaa");
+			Log.i("msg", getIntent().getIntExtra("data", -1) + "a");
 			data.set(pos, getIntent().getIntExtra("data", data.get(pos)));
 			notifyDataChanged();
+
 		}
 
 	}

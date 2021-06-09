@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/web_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#785BC1"
+        android:gravity="center_horizontal"
+        android:text="sdasdasd"
+        android:textSize="20sp" />
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/web_tv" />
+
+    <RelativeLayout
+        android:id="@+id/right_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#00ffffff"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/blog_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:src="@drawable/comment_64" />
+
+        <ImageView
+            android:id="@+id/save_blog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blog_comment"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:src="@drawable/save_64" />
+
+        <ImageView
+            android:id="@+id/man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/save_blog"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:src="@drawable/man_64" />
+
+        <ImageView
+            android:id="@+id/to_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/man"
+            android:clickable="true"
+            android:src="@drawable/outbox_64" />
+    </RelativeLayout>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/bloger_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bloger_panel_bg"
+        android:padding="10.0dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/panel_bloger_img"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sample_face" />
+
+        <TextView
+            android:id="@+id/panel_bloger_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@id/panel_bloger_img"
+            android:text="博主:"
+            android:textColor="#ffffff"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/panel_blog_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/panel_bloger_name"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@id/panel_bloger_img"
+            android:text="博客:"
+            android:textColor="#ffffff"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/panel_blog_list"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/bloger_panel_bg"
+            android:gravity="center"
+            android:padding="10.0dip"
+            android:text="博客列表"
+            android:textColor="#ffffff"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

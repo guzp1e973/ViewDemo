@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lifeassistant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.example.lifeassistant.activitys.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.lifeassistant.activitys.AboutActivity"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.notepad.NotePadActivity"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.notepad.NotepadAdd"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.notepad.EditNotePadActivity"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.weather.WeatherActivity"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.score.ScoreActivity"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.Express"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.Caculator"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.contacts.ContactsAct"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.contacts.ContactsAdd"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.contacts.ContactsPager"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.contacts.ContactsDetailsActivity"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.contacts.Contacts"></activity>
+        <activity android:name="com.example.lifeassistant.activitys.CalendarActivity"></activity>
+    </application>
+
+</manifest>

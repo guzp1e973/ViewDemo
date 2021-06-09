@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ex_rl_1"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@color/nod_title" >
+
+        <Button
+            android:id="@+id/btn_express_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            
+            
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_notepad_one_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_about_back"
+            android:layout_alignBottom="@+id/btn_about_back"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="快递查询"
+            android:textColor="@color/nod_text"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/nod_title_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ex_rl_1" >
+
+        <Spinner
+            android:id="@+id/ems_com_list"
+            android:layout_width="270.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:entries="@array/express"
+            android:prompt="@string/input_express_company"
+            android:textColor="@color/ems_word"
+            android:textSize="20.0sp" />
+
+        <EditText
+            android:id="@+id/ems_express_number"
+            android:layout_width="270.0dip"
+            android:layout_height="40.0dip"
+            android:layout_below="@id/ems_com_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/ems_spinner"
+            android:digits="@string/ems_digits"
+            android:hint="@string/input_express_number"
+            android:inputType="phone"
+            android:textColor="@color/ems_word"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/search_express_but"
+            android:layout_width="270.0dip"
+            android:layout_height="40.0dip"
+            android:layout_below="@id/ems_express_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/ems_search_bg"
+            android:text="@string/ems_search"
+            android:textColor="@color/ems_search_word"
+            android:textSize="25.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/express_info"
+            android:layout_width="270.0dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_express_but"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:background="@color/ems_count_bg"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/tv_ex_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/express_company"
+                android:textColor="@color/ems_count_word" />
+
+            <TextView
+                android:id="@+id/express_company_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50.0dip"
+                android:layout_toRightOf="@+id/tv_ex_1"
+                android:textColor="@color/ems_count_word" />
+
+            <TextView
+                android:id="@+id/tv_ex_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/express_company_info"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/express_post_id"
+                android:textColor="@color/ems_count_word" />
+
+            <TextView
+                android:id="@+id/express_id_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/express_company_info"
+                android:layout_marginLeft="50.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_toRightOf="@+id/tv_ex_2"
+                android:textColor="@color/ems_count_word" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/express_id_info"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/express_message"
+                android:textColor="@color/ems_count_word" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="200.0dip"
+                android:layout_below="@id/express_company_info"
+                android:layout_marginTop="50.0dip" >
+
+                <TextView
+                    android:id="@+id/express_message_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    
+                    android:textColor="@color/ems_count_word" />
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

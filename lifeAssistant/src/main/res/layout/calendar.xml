@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/calendar_bg" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBE6d8" >
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_marginTop="53dip"
+            android:background="#B29C5F"/>
+
+        <Button
+            android:id="@+id/today_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/back_to_today_bg"
+            android:text="@string/button_calendar_back"
+            android:textColor="#FF00FF"
+            android:textSize="12sp" >
+        </Button>
+
+        <TextView
+            android:id="@+id/today_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:text="@string/button_goto_calendar"
+            android:textColor="@color/white"
+            android:textSize="19sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_cal_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="25dip"
+            android:background="@drawable/calendar_back"
+            android:onClick="btnBack" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/button_calendar_back" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_selector"
+            android:contentDescription="@string/button_calendar_left"
+            android:paddingTop="7dip" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/day_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right_selector"
+            android:contentDescription="@string/button_calendar_right"
+            android:paddingTop="7dip" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/calendar_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_layout" >
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="edt_bg">#E7E3E5</color>
+    <color name="nod_title">#ffebe6d8</color>
+    <color name="nod_text">#ff5a5859</color>
+    <color name="nod_title_line">#ffb29c5f</color>
+    <color name="white">#ffffffff</color>
+    <color name="notepad_divider">#ffd4d4d4</color>
+    <color name="nod_bg">#ffe4e3e1</color>
+    <color name="cacl_bg">#ffcfcecc</color>
+    <color name="cacl_text_bg">#ffd8eef7</color>
+    <color name="cacl_text">#ffebe6d8</color>
+    <color name="calendar_background">#ffdcdadb</color>
+    <color name="selection">#ffe3bad8</color>
+    <color name="calendar_zhe_day">#fffaedda</color>
+    <color name="event_center">#ff6bd697</color>
+    <color name="noMonth">#ffc0c0c0</color>
+    <color name="text_6">#fff3feff</color>
+    <color name="text_7">#fffff1f2</color>
+    <color name="frame">#ffdddbdc</color>
+    <color name="Text">#ff603b07</color>
+    <color name="ToDayText">#ffc2a53d</color>
+    <color name="ems_bg">#ffe4e3e1</color>
+    <color name="ems_spinner">#ffe0d9c7</color>
+    <color name="ems_word">#ff9e9a91</color>
+    <color name="ems_search_bg">#ffbbabaa</color>
+    <color name="ems_search_word">#ff5a5858</color>
+    <color name="ems_count_bg">#ffe0d9c7</color>
+    <color name="ems_count_word">#ff646160</color>
+
+</resources>

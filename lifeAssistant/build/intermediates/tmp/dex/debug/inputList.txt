@@ -1,0 +1,3 @@
+E:\StudioSpace\lifeAssistant\build\intermediates\classes\debug
+E:\StudioSpace\lifeAssistant\build\intermediates\pre-dexed\debug\jsoup-1.7.3-77bd702120564e31e5f96436326ecc39cfec2d73.jar
+E:\StudioSpace\lifeAssistant\build\intermediates\pre-dexed\debug\support-v4-18.0.0-160cef38d65cc2d494c5e2a6ca9d82f92d3dbe12.jar

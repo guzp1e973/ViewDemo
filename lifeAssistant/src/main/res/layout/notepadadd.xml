@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@color/nod_title" >
+
+        <Button
+            android:id="@+id/btn_no_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_nodepad_notsave" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/nod_title_line" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="新建记事"
+            android:textColor="@color/nod_text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_nodepad_save" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_body"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/edt_bg"
+        android:gravity="top|left"
+        android:hint="写点什么吧"
+        android:inputType="textMultiLine"
+        android:maxLength="1000"
+        android:minLines="6"
+        android:textColor="@color/nod_text"
+        android:textSize="20sp"
+        android:textStyle="bold" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

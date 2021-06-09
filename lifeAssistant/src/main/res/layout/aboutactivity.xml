@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@color/nod_title" >
+
+        <Button
+            android:id="@+id/btn_about_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_notepad_one_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_about_back"
+            android:layout_alignBottom="@+id/btn_about_back"
+            android:layout_centerHorizontal="true"
+            android:text="关于"
+            android:textColor="@color/nod_text"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/nod_title_line" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="生活助手"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/nod_text"
+        android:drawableTop="@drawable/icon"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+         android:textColor="@color/nod_text"
+        android:text="http://www.anjoyo.com" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+         android:textColor="@color/nod_text"
+        android:text="安卓越科技(北京)有限公司" />
+
+    <TextView
+        android:id="@+id/about_version"
+        android:textSize="20sp"
+        android:textColor="@color/nod_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:text="当前版本号：beta 1.0" />
+
+</RelativeLayout>

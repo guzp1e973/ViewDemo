@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/StudioSpace/lifeAssistant/src/main/res/values/sp_data.xml -->
+    <eat-comment/>
+    <string-array name="express">
+	    <item>顺丰</item>
+	    <item>申通</item>
+	    <item>圆通</item>
+	    <item>韵达</item>
+	    <item>天天</item>
+	    <item>EMS</item>
+	    <item>中通</item>
+	    <item>汇通</item>
+	</string-array>
+    <string-array name="xueqi">
+	    <item>1</item>
+	    <item>2</item>
+	</string-array>
+    <string-array name="year">
+	    <item>2013-2014</item>
+	    <item>2012-2013</item>
+	    <item>2011-2012</item>
+	</string-array>
+    <!-- From: file:/E:/StudioSpace/lifeAssistant/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="Text">#ff603b07</color>
+    <color name="ToDayText">#ffc2a53d</color>
+    <color name="cacl_bg">#ffcfcecc</color>
+    <color name="cacl_text">#ffebe6d8</color>
+    <color name="cacl_text_bg">#ffd8eef7</color>
+    <color name="calendar_background">#ffdcdadb</color>
+    <color name="calendar_zhe_day">#fffaedda</color>
+    <color name="edt_bg">#E7E3E5</color>
+    <color name="ems_bg">#ffe4e3e1</color>
+    <color name="ems_count_bg">#ffe0d9c7</color>
+    <color name="ems_count_word">#ff646160</color>
+    <color name="ems_search_bg">#ffbbabaa</color>
+    <color name="ems_search_word">#ff5a5858</color>
+    <color name="ems_spinner">#ffe0d9c7</color>
+    <color name="ems_word">#ff9e9a91</color>
+    <color name="event_center">#ff6bd697</color>
+    <color name="frame">#ffdddbdc</color>
+    <color name="noMonth">#ffc0c0c0</color>
+    <color name="nod_bg">#ffe4e3e1</color>
+    <color name="nod_text">#ff5a5859</color>
+    <color name="nod_title">#ffebe6d8</color>
+    <color name="nod_title_line">#ffb29c5f</color>
+    <color name="notepad_divider">#ffd4d4d4</color>
+    <color name="selection">#ffe3bad8</color>
+    <color name="text_6">#fff3feff</color>
+    <color name="text_7">#fffff1f2</color>
+    <color name="white">#ffffffff</color>
+    <!-- From: file:/E:/StudioSpace/lifeAssistant/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/E:/StudioSpace/lifeAssistant/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">手机工具箱</string>
+    <string name="button_0">0</string>
+    <string name="button_1">1</string>
+    <string name="button_2">2</string>
+    <string name="button_3">3</string>
+    <string name="button_4">4</string>
+    <string name="button_5">5</string>
+    <string name="button_6">6</string>
+    <string name="button_7">7</string>
+    <string name="button_8">8</string>
+    <string name="button_9">9</string>
+    <string name="button_add">+</string>
+    <string name="button_back">DEL</string>
+    <string name="button_calendar_back">回到今天</string>
+    <string name="button_calendar_left">左</string>
+    <string name="button_calendar_right">右</string>
+    <string name="button_clear">C</string>
+    <string name="button_divide">/</string>
+    <string name="button_equal">=</string>
+    <string name="button_goto_calendar">日历</string>
+    <string name="button_goto_weather">天气查询</string>
+    <string name="button_multiply">*</string>
+    <string name="button_phone_add">增加</string>
+    <string name="button_phone_cancel">取消</string>
+    <string name="button_point">.</string>
+    <string name="button_sub">-</string>
+    <string name="edit_chose_city">请选择城市</string>
+    <string name="ems_digits">0123456789abcdefghjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="ems_search">查询</string>
+    <string name="ems_title">快递查询</string>
+    <string name="express_company">快递公司</string>
+    <string name="express_message">跟踪信息</string>
+    <string name="express_number_error">单号暂未收录或已过期|快递公司网络异常，请稍后查询</string>
+    <string name="express_post_id">快递单号</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="input_express_company">请选择快递公司</string>
+    <string name="input_express_number">输入快递单号</string>
+    <string name="loading">正在加载数据,请稍候......</string>
+    <string name="net_error">网络连接失败,请确认GPRS/WiFi可用!</string>
+    <string name="opt_express">选输入递公司</string>
+    <string name="text_weather">天气：</string>
+    <string name="text_weather_city">多云</string>
+    <string name="text_weather_day">日期</string>
+    <string name="text_weather_mounth">08/20</string>
+    <string name="text_yes">确定</string>
+    <string name="textview_phone_name">联系人：</string>
+    <string name="textview_phone_num">常用联系人</string>
+    <string name="title_notepad_add">新建记事</string>
+    <string name="title_notepad_content">随想，随记......</string>
+    <string name="xuenian">--请选择学年--</string>
+    <string name="xueqi">--请选择学期--</string>
+    <!-- From: file:/E:/StudioSpace/lifeAssistant/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

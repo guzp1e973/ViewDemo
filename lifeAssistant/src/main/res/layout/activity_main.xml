@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/weather"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#FBF200"
+            android:onClick="doClick" >
+
+            <com.example.lifeassistant.util.ModernUI
+                android:id="@+id/m_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="doClick"
+                android:scaleType="matrix"
+                android:src="@drawable/main_weather" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m_weather"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="天气查询"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/express"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#2F97FB"
+            android:onClick="doClick" >
+
+            <com.example.lifeassistant.util.ModernUI
+                android:id="@+id/m_express"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="doClick"
+                android:scaleType="matrix"
+                android:src="@drawable/main_ems" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m_express"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="快递查询"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/calendar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#B4E419"
+            android:onClick="doClick" >
+
+            <com.example.lifeassistant.util.ModernUI
+                android:id="@+id/m_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="doClick"
+                android:scaleType="matrix"
+                android:src="@drawable/main_calendar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m_calendar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="日历"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/contacts"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#74D9FB"
+            android:onClick="doClick" >
+
+            <com.example.lifeassistant.util.ModernUI
+                android:id="@+id/m_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="doClick"
+                android:scaleType="matrix"
+                android:src="@drawable/main_contacts" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m_contacts"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="通讯录"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notepad"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#F774FB"
+            android:onClick="doClick" >
+
+            <com.example.lifeassistant.util.ModernUI
+                android:id="@+id/m_notepad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="doClick"
+                android:scaleType="matrix"
+                android:src="@drawable/main_notepad" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m_notepad"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="记事本"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/calculator"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#FBC90A"
+            android:onClick="doClick" >
+
+            <com.example.lifeassistant.util.ModernUI
+                android:id="@+id/m_calculator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="doClick"
+                android:scaleType="matrix"
+                android:src="@drawable/main_calculator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m_calculator"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="计算器"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/about"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#FB5253"
+            android:onClick="doClick" >
+
+            <com.example.lifeassistant.util.ModernUI
+                android:id="@+id/m_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="doClick"
+                android:scaleType="matrix"
+                android:src="@drawable/score" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m_about"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="关于"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="220.0dip"
+        android:layout_height="91.0dip"
+        android:background="#ffe0d9c7" >
+
+        <ImageView
+            android:id="@+id/img_weather_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/text_weather" />
+
+        <TextView
+            android:id="@+id/t_weather_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_weather_logo"
+            android:paddingLeft="15.0dip"
+            android:text="@string/text_weather_day"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:id="@+id/t_weather_mounth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/t_weather_day"
+            android:paddingLeft="15.0dip"
+            
+            android:text="@string/text_weather_mounth"
+            android:textColor="#ff000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100.0dip"
+        android:layout_height="91.0dip" >
+
+        <TextView
+            android:id="@+id/t_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25.0dip"
+            android:text="@string/text_weather"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:id="@+id/t_weather_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/t_weather"
+            android:layout_below="@id/t_weather"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="12.0dip"
+            android:text="@string/text_weather_city"
+            android:textColor="#ff000000" />
+    </RelativeLayout>
+
+</LinearLayout>

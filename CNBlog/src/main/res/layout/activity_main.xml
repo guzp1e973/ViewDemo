@@ -1,0 +1,281 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <ScrollView
+        android:id="@+id/meun"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/meun_lin"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/news"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#aa333333"
+                    android:gravity="center_horizontal"
+                    android:text="新闻" />
+
+                <TextView
+                    android:id="@+id/remen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu"
+                    android:drawableLeft="@drawable/heart_32"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="热门新闻" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="@drawable/list_item_divide_operate" />
+
+                <TextView
+                    android:id="@+id/zuixin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu"
+                    android:drawableLeft="@drawable/rss_32"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="最新新闻" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="@drawable/list_item_divide_operate" />
+
+                <TextView
+                    android:id="@+id/tuijian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu"
+                    android:drawableLeft="@drawable/globe_32"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="推荐新闻" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/blog"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#aa333333"
+                    android:gravity="center_horizontal"
+                    android:text="博客" />
+
+                <TextView
+                    android:id="@+id/suoyou"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu"
+                    android:drawableLeft="@drawable/star_32"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="所有博客" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="@drawable/list_item_divide_operate" />
+
+                <TextView
+                    android:id="@+id/paihang"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu"
+                    android:drawableLeft="@drawable/chart_bar_down_32"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="48小时阅读排行" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="@drawable/list_item_divide_operate" />
+
+                <TextView
+                    android:id="@+id/tuijian_10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu"
+                    android:drawableLeft="@drawable/chart_area_32"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="10天内推荐排行" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/shoucang"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#aa333333"
+                    android:gravity="center_horizontal"
+                    android:text="收藏" />
+
+                <TextView
+                    android:id="@+id/shuqian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu"
+                    android:drawableLeft="@drawable/book_bookmark_32"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="书签" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="@drawable/list_item_divide_operate" />
+
+                <TextView
+                    android:id="@+id/lixian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu"
+                    android:drawableLeft="@drawable/document_32"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="离线浏览" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/gongju"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#aa333333"
+                    android:gravity="center_horizontal"
+                    android:text="工具" />
+
+                <TextView
+                    android:id="@+id/sousuo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu"
+                    android:drawableLeft="@drawable/magnifier_32"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="搜索" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="@drawable/list_item_divide_operate" />
+
+                <TextView
+                    android:id="@+id/shezhi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu"
+                    android:drawableLeft="@drawable/gear_32"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="设置" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="@drawable/list_item_divide_operate" />
+
+                <TextView
+                    android:id="@+id/exit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu"
+                    android:drawableLeft="@drawable/exit_32"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="退出" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#000000"
+                android:text="热门新闻"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

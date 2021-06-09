@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="3.0dip"
+    android:paddingTop="3.0dip" >
+
+    <ImageView
+        android:id="@+id/blogger_img"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginTop="3.0dip"
+        android:src="@drawable/sample_face" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@+id/blogger_img"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/blogger_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/time_day"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff999999"
+            android:textSize="13.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/blog_count"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:hint="共  00 篇"
+        android:textColor="#333333"
+        android:textSize="18.0sp" />
+
+</RelativeLayout>

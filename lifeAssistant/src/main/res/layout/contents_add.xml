@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="20dp"
+    android:background="#ffebebeb" >
+
+    <EditText
+        android:id="@+id/edit_contents"
+        android:layout_width="220.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="联系人姓名"
+        android:paddingLeft="10.0dip" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:layout_toLeftOf="@+id/edit_contents"
+        android:layout_marginRight="10dp"
+        android:text="*"
+        android:textColor="#ffee0000"
+        android:textSize="20.0sp" />
+
+    <EditText
+        android:id="@+id/edit_contents_num"
+        android:layout_width="220.0dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_contents"
+        android:layout_centerHorizontal="true"
+        android:hint="联系人电话号码"
+        android:inputType="phone"
+        android:paddingLeft="10.0dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_contents_num"
+        android:layout_alignBottom="@+id/edit_contents_num"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="*"
+        android:textColor="#ffee0000"
+        android:textSize="20.0sp" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="100.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_contents"
+        android:layout_marginTop="150.0dip"
+        android:text="增加"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="100.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edit_contents"
+        android:layout_alignTop="@+id/btn_add"
+        android:text="取消"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>

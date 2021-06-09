@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_nodepad_title" >
+
+        <ImageView
+            android:id="@+id/img_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_notepad_one_back" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_return"
+            android:layout_centerHorizontal="true"
+            android:text="当前记事本的标题"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_time"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/edit"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/edit"
+            android:src="@drawable/save"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/tv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:inputType="textMultiLine"
+        
+        android:lineSpacingExtra="3dp"
+        android:textColor="#000000"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
